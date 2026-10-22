@@ -1,0 +1,53 @@
+/* ================================
+   Estilos personalizados para Casa Dolce Catering
+   ================================ */
+
+/* Scrollbar personalizado (solo WebKit) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0D0D0D;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #D4AF37;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #B89528;
+}
+
+/* Animación Fade In */
+.fade-in {
+    animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Texto con degradado dorado */
+.text-gradient-gold {
+    background: linear-gradient(135deg, #FFF0C2 0%, #D4AF37 50%, #AA820A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Compatibilidad adicional */
+    background-clip: text;
+    color: transparent;
+}
+
+/* Borde con brillo dorado */
+.gold-border-glow {
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+}
